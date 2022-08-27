@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title> Customers </title>
+    <link rel="stylesheet" href="clientstyle.css">
+    <!-- Boxicons CDN Link : framework to help us build more pro css-->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body id="bodyColor">
+    <div class="sidebar" id="sidebarColor">
+        <div class="logo-details">
+            <i class='bx bxs-home'></i>
+            <span class="logo_name">Dulcet</span>
+        </div>
+
+        <ul class="nav-links" id="linkscolor">
+            <li>
+              <a href="admin.html" >
+                <i class='bx bx-grid-alt' ></i>
+                <span class="links_name">Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class='bx bx-book-alt' ></i>
+                <span class="links_name">Preview</span>
+              </a>
+            </li>
+            <li>
+              <a href="clients.html" class="active">
+                <i class='bx bx-list-ul' ></i>
+                <span class="links_name">Customers</span>
+              </a>
+            </li>
+            <li class="log_out">
+              <a href="#">
+                <i class='bx bx-log-out'></i>
+                <span class="links_name">Log out</span>
+              </a>
+            </li>
+          </ul>
+    </div>
+
+    <section class="home-section">
+        <nav id="navcolor">
+            <div class="sidebar-button">
+                <i class="bx bx-menu sidebarBtn"></i>
+                <span class="dashboard">Dashboard</span>
+            </div>
+            <div class="profile-details">
+                <img src="images/malk.jpeg" alt="M">
+                <span class="admin_name">Malk Khalid</span>
+                <i class='bx bx-chevron-down' ></i> <!--hw to show info-->
+            </div>
+        </nav>
+
+        <div class="customer box">
+            <div class="title">Customers List</div>
+            <table class="ctable">
+                    <tr>
+                        <td class="person ">
+                            <span>
+                                <img src="images/dayan.jpg" alt="">
+                                <label>Dayan</label>
+                            </span> 
+                        </td>
+                        <td class="person phone">
+                            245-785-951
+                        </td>
+                        <td class="person mail">
+                            dayan@gmail.com
+                        </td>
+                        <td class="person date">
+                            7 years customer
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="person">
+                            <span>
+                                <img src="images/noshi.jpg" alt="">
+                                <label>Noshi</label>
+                            </span>
+                        </td>
+                        <td class="person phone">
+                            784-546-745
+                        </td>
+                        <td class="person mail">
+                            noshi@gmail.com
+                        </td>
+                        <td class="person date">
+                            6 years customer
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="person">
+                           <span>
+                            <img src="images/mari.jpg" alt="">
+                            <label>Marinette</label>
+                           </span>
+                        </td>
+                        <td class="person phone">
+                            123-478-851
+                        </td>
+                        <td class="person mail">
+                            mari@gmail.com
+                        </td>
+                        <td class="person date">
+                            5 years customer
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="person">
+                            <span>
+                                <img src="images/phinix.jpg" alt="">
+                                <label>Phinix</label>
+                            </span>
+                        </td>
+                        <td class="person phone">
+                            749-125-984
+                        </td>
+                        <td class="person mail">
+                            phinix@gmail.com
+                        </td>
+                        <td class="person date">
+                            4 years customer
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="person">
+                           <span>
+                            <img src="images/cruella.jpg" alt="">
+                            <label>Cruella</label>
+                           </span> 
+                        </td>
+                        <td class="person phone">
+                            842-988-145
+                        </td>
+                        <td class="person mail">
+                            cruella@gmail.com
+                        </td>
+                        <td class="person date">
+                            2 years customer
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="person">
+                           <span>
+                            <img src="images/puss.jpg" alt="">
+                            <label>Puss in boots</label>
+                           </span> 
+                        </td>
+                        <td class="person phone">
+                            596-102-405
+                        </td>
+                        <td class="person mail">
+                            puss@gmail.com
+                        </td>
+                        <td class="person date">
+                            2 years customer
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="person">
+                           <span>
+                            <img src="images/wolf.jpg" alt="">
+                            <label>Mr.Wolf</label>
+                           </span> 
+                        </td>
+                        <td class="person phone">
+                            230-878-140
+                        </td>
+                        <td class="person mail">
+                            wolf@gmail.com
+                        </td>
+                        <td class="person date">
+                            1 years customer
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="person">
+                           <span>
+                            <img src="images/mard.jpg" alt="">
+                            <label>Marid Washwishni</label>
+                           </span> 
+                        </td>
+                        <td class="person phone">
+                            658-214-879
+                        </td>
+                        <td class="person mail">
+                            mard@gmail.com
+                        </td>
+                        <td class="person date">
+                            1 years customer
+                        </td>
+                    </tr>
+            </table>
+        </div>
+    </section>
+
+    <script>
+        let sidebar = document.querySelector(".sidebar");
+        let sidebarBtn = document.querySelector(".sidebarBtn");
+        sidebarBtn.onclick = function() 
+        {
+            sidebar.classList.toggle("active");
+            if(sidebar.classList.contains("active"))
+            {
+                sidebarBtn.classList.replace("bx-menu" ,"bx-menu-alt-right");
+            }
+            else
+                sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+        } 
+    </script>
+    <script type="text/javascript" src="adminscript.js"></script>
+</body>
+</html>

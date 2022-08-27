@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title> Dashboard </title>
+    <link rel="stylesheet" href="assets//adminstyle.css">
+    <!-- Boxicons CDN Link : framework to help us put icons-->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+</head>
+<body id="bodyColor">
+    <div class="sidebar" id="sidebarColor">
+        <div class="logo-details">
+            <i class='bx bxs-home'></i>
+            <a href="dulcet_logged_in.html"><span class="logo_name">Dulcet</span></a>
+        </div>
+
+        <ul class="nav-links" id="linkscolor">
+            <li>
+              <a href="admin.html" class="active">
+                <i class='bx bx-grid-alt' ></i>
+                <span class="links_name">Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" >
+                <i class='bx bx-book-alt' ></i>
+                <span class="links_name">Preview</span>
+              </a>
+            </li>
+            <li>
+              <a href="clients.html" >
+                <i class='bx bx-list-ul' ></i>
+                <span class="links_name">Customers</span>
+              </a>
+            </li>
+            <li class="log_out">
+              <a href="#">
+                <i class='bx bx-log-out'></i>
+                <span class="links_name">Log out</span>
+              </a>
+            </li>
+          </ul>
+    </div>
+
+    <section class="home-section">
+        <nav id="navcolor">
+            <div class="sidebar-button">
+                <i class="bx bx-menu sidebarBtn"></i>
+                <span class="dashboard">Dashboard</span>
+            </div>
+            <div class="profile-details">
+                <img src="images/malk.jpeg" alt="M">
+                <span class="admin_name">Malk Khalid</span>
+                <i class='bx bx-chevron-down' ></i> <!--hw to show info-->
+            </div>
+        </nav>
+        <div class="home-content">
+            <div class="change-boxes">
+                <div class="box">
+                    <span class="box-topic">Change The Colors</span>
+                    <br>
+                    <input type="button" value="Halloween" class="color" id="halloween" onclick="changecolor('halloween')">
+                    <br>
+                    <input type="button" value="Valentine" class="color" id="valentine" onclick="changecolor('valentine')">
+                    <br>
+                    <input type="button" value="Default" class="color" id="default" onclick="changecolor('Default')">
+                </div>
+                <div class="box">
+                    <span class="box-topic">Change The Content</span>
+                    <br>
+                    <a href="dulcet20off.html" >
+                    <input type="button" value="20% Sales" class="price" id="twenty-sale" onclick="calcsales('twenty')">
+                  </a>
+                    <br>
+                    <a href="dulcet50off.html">
+                    <input type="button" value="50% Sales" class="price" id="fifty-sale" onclick="calcsales('fifty')">
+                  </a>
+                    <br>
+                    <a href="DULCET.html">
+                    <input type="button" value="No Sales" class="price" id="no-sale" onclick="calcsales('nosale')">
+                  </a>
+                    <br>
+                    <p>price: <span id="saleprice">100</span></p>
+                    <p>price: <span id="saleprice">300</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        let sidebar = document.querySelector(".sidebar");
+        let sidebarBtn = document.querySelector(".sidebarBtn");
+        sidebarBtn.onclick = function()
+        {
+            sidebar.classList.toggle("active");
+            if(sidebar.classList.contains("active"))
+            {
+                sidebarBtn.classList.replace("bx-menu" ,"bx-menu-alt-right");
+            }
+            else
+                sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+        }
+    </script>
+    <script type="text/javascript" src="adminscript.js"></script>
+</body>
+</html>

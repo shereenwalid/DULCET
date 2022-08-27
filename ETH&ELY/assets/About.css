@@ -1,0 +1,144 @@
+
+
+
+/*** About ***/
+.about-section {
+    background:
+        url(imgs/About.png);
+        size: 100%;
+    background-repeat: no-repeat;
+    background-color: transparent; 
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+  
+  .dulcet-title{
+    font-family:serif;
+    font-weight: 20;
+    font-size:22px;
+    line-height: 1.1;
+  }
+  
+  .dulcet-subtitle{
+    padding-top: 18px;
+    font-family: Arial;
+    font-weight: lighter;
+    font-size:16px;
+    line-height: 1.2;
+    
+  }
+  
+  .btn{
+    font-family: Arial;
+    font-size:15px;
+    letter-spacing: 1px;
+  }
+  
+  
+  .btn-light {
+    color: white;
+    background-color: transparent;
+    border: 3px solid white;
+  }
+  
+  .btn-light:hover {
+    color: black;
+    background-color: white;
+    
+  }
+  .button-paddings {
+    padding-right: 2rem !important;
+    padding-left: 2rem !important;
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+  }
+  .about-text-start{
+    padding-left:80px;
+    padding-top: 85px;
+    margin-top: 0px;
+    color:white;
+    font-size: 50px;
+  }
+  
+  
+  
+  
+  /*** News ***/
+  .pi-2{
+    padding-top: 0px;
+  }
+  #news{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  #news p{
+    padding-top: 18px;
+    font-family: Arial;
+    font-weight: lighter;
+    font-size:16px;
+    line-height: 1.2;
+    color: black;
+  }
+  input[type=text] {
+    width: 300px;
+    padding: 12px;
+    background-color: #e9e9e9;
+    margin: 3px;
+  }
+  input[type=submit] {
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    width: 150px;
+    margin: 3px;
+  }
+  input::placeholder {
+    font-weight: bold;
+    opacity: .5;
+    color:#636161;
+    font-family: Arial;
+    font-weight: lighter;
+  }
+  input[type=submit]:hover {
+    background-color:#636161;
+  }
+  form{
+    width: 40%;
+  }
+  span{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: serif;
+    text-align: center;
+  }
+
+  
+#product1{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  #product1 .co-container{
+    display: flex;
+    justify-content:center;
+    padding-top: 20px;
+    flex-wrap: wrap;
+  }
+
+  #product1 .co{
+    width: 23%;
+    min-width: 250px;
+    cursor: pointer;
+    margin: 15px 0;
+  }
+  #product1 .co img{
+    width: 100%;
+    border-radius: 20px;
+  }
+.space{
+    padding-left: 20px; 
+    padding-right: 20px;
+}
